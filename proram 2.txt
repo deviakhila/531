@@ -1,0 +1,25 @@
+2.	XOR a string with a I27
+AIM: Write a C program that contains a string (char pointer) with a value \Hello World'. The program should AND or and XOR each character in this string with l27 and display the result.
+PROGRAM:
+#include<stdio.h> 
+#include<stdlib.h>
+ void main()
+{
+char str[]="Hello World";
+ char strl[ll];
+char str2[ll]=str[]; 
+int i,len;
+len = strlen(str);
+for(i=O;i<len;i++)
+{
+strl[i] =str[i]&l27; 
+printf("%c",strl[i]);
+}
+printf("\n");
+for(i=O;i<len;i++)
+{
+str3[i] =str2[i]^l27;
+ printf("%c",str3[i]);
+}
+printf("\n");
+}
